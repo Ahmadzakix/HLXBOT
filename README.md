@@ -74,16 +74,19 @@
 
 ```bash
 {
-    "botName": "BOT_NAME",
-    "ownerName": "OWNER_NAME",
+    "botName": "HLXBOT",
+    "ownerName": "Ahmadzaki",
     "lolKey": "YOUR_APIKEY",
-    "apivinz": "YOUR_APIKEY",
+    "apizeks": "YOUR_APIKEY",
+    "xapi": "YOUR_APIKEY",
+    "wmdepan": "Crate By",
+    "wmbelakang": "HLXBOT",
     "apixteam": "YOUR_APIKEY",
     "apitobz": "Tobzzz17",
-    "ownerNumbers": "628885xxxxxx@s.whatsapp.net",
+    "ownerNumbers": "6283873394995@s.whatsapp.net",
     "languages": "ind",
-    "botPrefix": ".",
-    "memberLimitss": "25",
+    "botPrefix": "#",
+    "memberLimitss": "10",
     "userDefaultLimit": "30"
 }
 ```
