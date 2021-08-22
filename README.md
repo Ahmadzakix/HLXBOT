@@ -1,6 +1,6 @@
 ### Hai Gua Zaki <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="27px">
 <p align="center">
-<a href="https://github.com/Ahmadzakix"><img src="https://github.com/Ahmadzakix/Ahmadzaki/blob/main/%2B44%207537%20127631%2020210307_185933.jpg"></a>
+<a href="https://github.com/Ahmadzakix"><img src="https://github.com/Ahmadzakix/Ahmadzaki/blob/main/zakinew.jpeg"></a>
 </p>
 <br>
 
