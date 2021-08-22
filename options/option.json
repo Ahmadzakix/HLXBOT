@@ -1,7 +1,12 @@
 {
     "botName": "HLXBOT",
     "ownerName": "Ahmadzaki",
-    "BarBarKey": "YOUR_APIKEY",
+    "lolKey": "YOUR_APIKEY",
+    "apizeks": "YOUR_APIKEY",
+    "wmdepan": "Crate By"
+    "wmbelakang": "HLXBOT"
+    "apixteam": "YOUR_APIKEY",
+    "apitobz": "Tobzzz17",
     "ownerNumbers": "6283873394995@s.whatsapp.net",
     "languages": "ind",
     "botPrefix": "#",
