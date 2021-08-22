@@ -13,13 +13,13 @@
 <a href="https://github.com/Ahmadzakix"><img title="Author" src="https://img.shields.io/badge/AUTHOR-AHMADZAKI-orange?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-    <a href="https://github.com/Ahmadzakix/followers"><img title="Followers" src="https://img.shields.io/github/followers/NazwaS?style=flat-square"></a>
-    <a href="https://github.com/Ahmadzakix/wabotv7/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/Ahmadzakix/wabotv7?style=flat-square"></a>
-    <a href="https://github.com/Ahmadzakix/wabotv7/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Ahmadzakix/wabotv7?style=flat-square"></a>
-    <a href="https://github.com/Ahmadzakix/wabotv7/watchers"><img title="watchers" src="https://img.shields.io/github/watchers/Ahmadzakix/wabotv7?style=flat-square"></a>
+    <a href="https://github.com/Ahmadzakix/followers"><img title="Followers" src="https://img.shields.io/github/followers/Ahmadzakix?style=flat-square"></a>
+    <a href="https://github.com/Ahmadzakix/HLXBOT/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/Ahmadzakix/HLXBOT?style=flat-square"></a>
+    <a href="https://github.com/Ahmadzakix/HLXBOT/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Ahmadzakix/HLXBOT?style=flat-square"></a>
+    <a href="https://github.com/Ahmadzakix/HLXBOT/watchers"><img title="watchers" src="https://img.shields.io/github/watchers/Ahmadzakix/HLXBOT?style=flat-square"></a>
     <a href="#"><img title="maintened" src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=flat"></a>
-    <a href="#"><img title="repo size" src="https://img.shields.io/github/repo-size/Ahmadzakix/wabotv7?style=flat-square"></a>
-    <a href="https://www.codefactor.io/repository/github/Ahmadzakix/wabotv7"><img src="https://www.codefactor.io/repository/github/nazwas/termux-whatsapp-bot/badge" alt="CodeFactor" /></a>
+    <a href="#"><img title="repo size" src="https://img.shields.io/github/repo-size/Ahmadzakix/HLXBOT?style=flat-square"></a>
+    <a href="https://www.codefactor.io/repository/github/Ahmadzakix/HLXBOT"><img src="https://www.codefactor.io/repository/github/nazwas/termux-whatsapp-bot/badge" alt="CodeFactor" /></a>
 </p>
 
 <p align="center">
@@ -54,23 +54,32 @@
 ---
 
 ## Information
-- Change vcard contacts on [this section](https://github.com/NazwaS/termux-whatsapp-bot/blob/main/nzwa.js#L90)
-- Change Options on [this file](https://github.com/NazwaS/termux-whatsapp-bot/blob/main/options/option.json)
-- Change menu on [this folders](https://github.com/NazwaS/termux-whatsapp-bot/tree/main/database/menu)
+- Change vcard contacts on [this section](https://github.com/Ahmadzakix/HLXBOT/blob/main/nzwa.js#L90)
+- Change Options on [this file](https://github.com/Ahmadzakix/HLXBOT/blob/main/options/option.json)
+- Change menu on [this folders](https://github.com/Ahmadzakix/HLXBOT/tree/main/database/menu)
 
 ---
 
-- Get BarBarKey on [this site](https://mhankbarbar.tech)
+- Get lolKey on [this site](https://api.lolhuman.xyz)
 
 ---
 
-### How To Editing [option.json](https://github.com/NazwaS/termux-whatsapp-bot/blob/main/options/option.json)
+---
+
+- Get apivinz on [this site](https://api.zeks.xyz)
+
+---
+
+### How To Editing [option.json](https://github.com/Ahmadzakix/HLXBOT/blob/main/options/option.json)
 
 ```bash
 {
     "botName": "BOT_NAME",
     "ownerName": "OWNER_NAME",
-    "BarBarKey": "YOUR_APIKEY",
+    "lolKey": "YOUR_APIKEY",
+    "apivinz": "YOUR_APIKEY",
+    "apixteam": "YOUR_APIKEY",
+    "apitobz": "Tobzzz17",
     "ownerNumbers": "628885xxxxxx@s.whatsapp.net",
     "languages": "ind",
     "botPrefix": ".",
@@ -130,8 +139,8 @@ Follow The Steps Below!
 > termux-setup-storage
 (after that tap on permission)
 > apt install git -y
-> git clone https://github.com/Ahmadzakix/wabotv7
-> cd wabotv7
+> git clone https://github.com/Ahmadzakix/HLXBOT
+> cd HLXBOT
 > bash install.sh
 ```
 
@@ -163,8 +172,8 @@ Follow The Steps Below!
 ### Install
 
 ```bash
-> git clone https://github.com/Ahmadzakix/wabotv7
-> cd wabotv7
+> git clone https://github.com/Ahmadzakix/HLXBOT
+> cd HLXBOT
 > npm install
 > npm i imgbb-uploader
 > npm i got
