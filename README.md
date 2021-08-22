@@ -19,7 +19,7 @@
     <a href="https://github.com/Ahmadzakix/HLXBOT/watchers"><img title="watchers" src="https://img.shields.io/github/watchers/Ahmadzakix/HLXBOT?style=flat-square"></a>
     <a href="#"><img title="maintened" src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=flat"></a>
     <a href="#"><img title="repo size" src="https://img.shields.io/github/repo-size/Ahmadzakix/HLXBOT?style=flat-square"></a>
-    <a href="https://www.codefactor.io/repository/github/Ahmadzakix/HLXBOT"><img src="https://www.codefactor.io/repository/github/nazwas/termux-whatsapp-bot/badge" alt="CodeFactor" /></a>
+    <a href="https://www.codefactor.io/repository/github/Ahmadzakix/HLXBOT"><img src="https://www.codefactor.io/repository/github/Ahmadzakix/HLXBOT/badge" alt="CodeFactor" /></a>
 </p>
 
 <p align="center">
