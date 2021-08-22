@@ -78,11 +78,11 @@
     "ownerName": "Ahmadzaki",
     "lolKey": "YOUR_APIKEY",
     "apizeks": "YOUR_APIKEY",
-    "xapi": "YOUR_APIKEY",
-    "wmdepan": "Crate By",
-    "wmbelakang": "HLXBOT",
     "apixteam": "YOUR_APIKEY",
     "apitobz": "Tobzzz17",
+    "xapi": "BETA",
+    "wmdepan": "Crate By",
+    "wmbelakang": "HLXBOT",
     "ownerNumbers": "6283873394995@s.whatsapp.net",
     "languages": "ind",
     "botPrefix": "#",
@@ -101,10 +101,20 @@ Example:
 ```bash
 "ownerName": "Ahmadzaki",
 ```
-- Change ```BarBarKey``` with your mhankbarbar ApiKey
+- Change ```lolKey``` with your mhankbarbar ApiKey
 Example:
 ```bash
-"BarBarKey": "YOUR_APIKEY",
+"lolKey": "YOUR_APIKEY",
+```
+- Change ```zeksKey``` with your mhankbarbar ApiKey
+Example:
+```bash
+"zeksKey": "YOUR_APIKEY",
+```
+- Change ```xteamKey``` with your mhankbarbar ApiKey
+Example:
+```bash
+"xteamKey": "YOUR_APIKEY",
 ```
 - Change ```ownerNumbers``` with your WhatsApp Number ID
 Example:
@@ -117,19 +127,19 @@ Example:
 - Change ```botPrefix``` with your prefix
 Example:
 ```bash
-"botPrefix": "!",
+"botPrefix": "#",
 ```
 
 - Change ```memberLimitss``` with a member limits :v
 Example:
 ```bash
-"memberLimitss": "35",
+"memberLimitss": "5",
 ```
 
 - Change ```userDefaultLimit``` with Inisial limit
 Example:
 ```bash
-"userDefaultLimit": "35"
+"userDefaultLimit": "30"
 ```
 
 ---
