@@ -66,7 +66,13 @@
 
 ---
 
-- Get apivinz on [this site](https://api.zeks.xyz)
+- Get zeksKey on [this site](https://zeks.me)
+
+---
+
+---
+
+- Get xteamKey on [this site](https://api.xteam.xyz)
 
 ---
 
