@@ -607,7 +607,10 @@ Follow The Steps Below!
 | Timer|✅|
 
 ## Group
-* <a href="https://chat.whatsapp.com/JY4hngGAxT7A3DgyrxeKtx"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://saweria.co/Ahmadzaki"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
+## Donasi
+* <a href="https://chat.whatsapp.com/JY4hngGAxT7A3DgyrxeKtx"><img alt="Saweria" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ## Special Thanks To
 
