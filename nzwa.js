@@ -134,17 +134,17 @@ let tictactoe = [];
 
 blocked = []
 limitawal = userDefaultLimit
+memberlimit = memberLimitss
 cr = '*HLX-BOT VERFIED*'
 dfg = '𝗛𝗟𝗫 𝗕𝗢𝗧'
 numbernye = '0'
 namo = wmdepan
 ator = wmbelakang
-apixteamm = apixteam
-memberlimit = memberLimitss
-xapii = xapi
-apitobzz = apitobz
-lolKeyy = lolKey
-apizekss = apizeks
+apixteam = xteamKey
+xapii = xKey
+apitobz = tobzKey
+lolKey = lolKey
+apizeks = zeksKey
 /*************FUNCTION****************/
         const getLevelingXp = (userId) => {
             let position = false
@@ -2235,7 +2235,7 @@ caption: teks,
 
                                 if (!isRegister) return reply(mess.only.daftarB)
                                 if (isLimit(sender)) return reply(ind.limitend(pushname))
-				data = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=${apizekss}`)
+				data = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=${apizeks}`)
 				ez = `${data.result}`
 				reply(ez)
                                 await limitAdd(sender)
@@ -2277,7 +2277,7 @@ case 'ktpmaker':
                     warga = get_args[13]
                     until = get_args[14]
                     img = get_args[15]
-                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/ktpmaker?apikey=${lolKeyy}&nik=${nik}&prov=${prov}&kabu=${kabu}&name=${name}&ttl=${ttl}&jk=${jk}&jl=${jl}&rtrw=${rtrw}&lurah=${lurah}&camat=${camat}&agama=${agama}&nikah=${nikah}&kerja=${kerja}&warga=${warga}&until=${until}&img=${img}`)
+                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/ktpmaker?apikey=${lolKey}&nik=${nik}&prov=${prov}&kabu=${kabu}&name=${name}&ttl=${ttl}&jk=${jk}&jl=${jl}&rtrw=${rtrw}&lurah=${lurah}&camat=${camat}&agama=${agama}&nikah=${nikah}&kerja=${kerja}&warga=${warga}&until=${until}&img=${img}`)
                     zaki.sendMessage(from, ini_buffer, image, { quoted: mek })
                     break                                                  
 case 'ceritahoror':
@@ -2288,7 +2288,7 @@ case 'ceritahoror':
 				
 				
 				reply(ind.wait)
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${lolKeyy}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${lolKey}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Desc : ${get_result.desc}\n`
@@ -2344,7 +2344,7 @@ case 'randomhentai':
 
                               if (isLimit(sender)) return reply(ind.limitend(pushname))
                                         reply(mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${apitobzz}`, {method: 'get'})
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${apitobz}`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         zaki.sendMessage(from, buffer, image, {quoted: mek})
                                         await limitAdd(sender)
@@ -2566,7 +2566,7 @@ case 'hidetag':
                   zaki.updatePresence(from, Presence.composing) 
                   if (!isRegister) return reply(mess.only.daftarB)
                   if (isLimit(sender)) return reply(ind.limitend(pushname))
-                    data = await fetchJson(`https://api.zeks.xyz/api/artinama?apikey=${apizekss}&nama=${body.slice(10)}`)
+                    data = await fetchJson(`https://api.zeks.xyz/api/artinama?apikey=${apizeks}&nama=${body.slice(10)}`)
                    reply(data.result)
                    await limitAdd(sender)
                    break                                                  
@@ -2574,7 +2574,7 @@ case 'hidetag':
                     if (!isRegister) return reply(mess.only.daftarB)
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} 08123456789*`)
                     F = body.slice(12)
-                    anu = await fetchJson(`https://api.xteam.xyz/primbon/nomorhoki?no=${F}&APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/primbon/nomorhoki?no=${F}&APIKEY=${apixteam}`)
                     anu1 = `➻ *RAMAL* : ${anu.result}`
                     reply(anu1)
                     break                                                  
@@ -2590,7 +2590,7 @@ case 'hidetag':
 			 	    var F6 = F.split("&")[5]; 
 			 	    var F7 = F.split("&")[6];
 			 	    var F8 = F.split("&")[7]; 			 	    
-                    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalancinta?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalancinta?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteam}`)
                     anu1 = `➻ *JUDUL* : ${anu.result.judul}\n`
                     anu1 += `➻ *NAMA1* : ${anu.result.nama1}\n`
                     anu1 += `➻ *TANGGAL1* : ${anu.result.tgl1}\n`
@@ -2613,7 +2613,7 @@ case 'hidetag':
 			 	    var F6 = F.split("&")[5]; 
 			 	    var F7 = F.split("&")[6];
 			 	    var F8 = F.split("&")[7]; 		
-			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalanjodoh?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteamm}`)
+			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalanjodoh?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteam}`)
 			 	    anu1 = `➻ *JUDUL* : ${anu.result.judul}\n`
                     anu1 += `➻ *NAMA1* : ${anu.result.nama1}\n`
                     anu1 += `➻ *TANGGAL1* : ${anu.result.tgl1}\n`
@@ -2634,7 +2634,7 @@ case 'hidetag':
 			 	    var F6 = F.split("&")[5]; 
 			 	    var F7 = F.split("&")[6];
 			 	    var F8 = F.split("&")[7]; 		
-			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalanjodohbali?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteamm}`)
+			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalanjodohbali?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteam}`)
 			 	    anu1 = `➻ *JUDUL* : ${anu.result.judul}\n`
                     anu1 += `➻ *NAMA1* : ${anu.result.nama1}\n`
                     anu1 += `➻ *TANGGAL1* : ${anu.result.tgl1}\n`
@@ -2655,7 +2655,7 @@ case 'hidetag':
 			 	    var F6 = F.split("&")[5]; 
 			 	    var F7 = F.split("&")[6];
 			 	    var F8 = F.split("&")[7]; 		
-			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalansuamiistri?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteamm}`)
+			 	    anu = await fetchJson(`https://api.xteam.xyz/primbon/ramalansuamiistri?tgl1=${F1}&bln1=${F2}&thn1=${F3}&nama1=${F4}&tgl2=${F5}&bln2=${F6}&thn2=${F7}&nama2=${F8}&APIKEY=${apixteam}`)
 			 	    anu1 = `➻ *JUDUL* : ${anu.result.judul}\n`
 			 	    anu1 += `➻ *SUAMI* : ${anu.result.suami}\n`
 			 	    anu1 += `➻ *TANGGAL* : ${anu.result.tgl_suami}\n`
@@ -2669,7 +2669,7 @@ case 'hidetag':
                     if (!isRegister) return reply(mess.only.daftarB)
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} di gigit ular`)
                     F = body.slice(9)
-                    anu = await fetchJson(`https://api.xteam.xyz/primbon/tafsirmimpi?q=${F}&APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/primbon/tafsirmimpi?q=${F}&APIKEY=${apixteam}`)
                     anu1 = `➻ *HASIL* : ${anu.result}`
                     reply(anu1)
                     break                                                  
@@ -2682,7 +2682,7 @@ case 'hidetag':
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 					zaki.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://api.zeks.xyz/api/film?apikey=${apizekss}=${body.slice(6)}`, {method: 'get'})
+					data = await fetchJson(`https://api.zeks.xyz/api/film?apikey=${apizeks}=${body.slice(6)}`, {method: 'get'})
 					teks = '=================\n'
 					for (let i of data.result) {
 						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
@@ -2696,7 +2696,7 @@ case 'hidetag':
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 					zaki.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://api.zeks.xyz/api/film/2?apikey=${apizekss}=${body.slice(6)}`, {method: 'get'})
+					data = await fetchJson(`https://api.zeks.xyz/api/film/2?apikey=${apizeks}=${body.slice(6)}`, {method: 'get'})
 					teks = '=================\n'
 					for (let i of data.result) {
 						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
@@ -2707,7 +2707,7 @@ case 'hidetag':
 					case 'searchfilm':
                
                 pshh = `${body.slice(12)}`
-                  anu = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${pshh}&apikey=${apizekss}`, {method: 'get'})
+                  anu = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${pshh}&apikey=${apizeks}`, {method: 'get'})
                   puree = '======================\n'
                   for (let plyll of anu.result){
                   puree += ` *Judul:* ${plyll.title}\n *Link:* ${plyll.url}\n=====================\n`
@@ -2747,7 +2747,7 @@ case 'hidetag':
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				reply(ind.wait)
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/drakorongoing?apikey=${lolKeyy}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/drakorongoing?apikey=${lolKey}`)
                     get_result = get_result.result
                     ini_txt = "Ongoing Drakor\n\n"
                     for (var x of get_result) {
@@ -2768,7 +2768,7 @@ case 'hidetag':
 				reply(ind.wait())
                     if (args.length == 0) return reply(`Example: ${prefix + command} Tere Liye`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/wattpadsearch?apikey=${lolKeyy}&query=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/wattpadsearch?apikey=${lolKey}&query=${query}`)
                     get_result = get_result.result
                     ini_txt = "Wattpad Seach : \n"
                     for (var x of get_result) {
@@ -2816,7 +2816,7 @@ quoted: mek, caption: hasil
 					tels = body.slice(6)	
                                         if (!isRegister) return reply(mess.only.daftarB)				
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/wiki?q=${tels}&apikey=${apitobzz}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/wiki?q=${tels}&apikey=${apitobz}`, {method: 'get'})
 					reply(anu.result)
                                         await limitAdd(sender)
 					break                                                  	
@@ -2898,7 +2898,7 @@ if (!isRegister) return reply(mess.only.daftarB)
         if (args.length < 1) return reply(`Contoh : ${prefix + command} https://drive.google.com/uc?id=1lBYJ0I-qJH9IsbCid-AsZosepX4-UJet&export=download`) 
         reply(ind.wait)
 url = body.slice(10) 
-hans = await fetchJson(`https://api.zeks.xyz/api/gdbypass?apikey=${apizekss}&url=${url}`) 
+hans = await fetchJson(`https://api.zeks.xyz/api/gdbypass?apikey=${apizeks}&url=${url}`) 
 teks = `Filename : ${hans.data.file_name} \n\nSupport *HLX BOT* Dengan Follow ;\nInstagram.com/ahmadzaki_yo`
 buper = await getBuffer(hans.result.direct_download) 
 zaki.sendMessage(from, buper, video, {
@@ -2914,7 +2914,7 @@ zaki.sendMessage(from, buper, video, {
         if (isLimit(sender)) return reply(ind.limitend(pushname))
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.wattpad.com/707367860-kumpulan-quote-tere-liye-tere-liye-quote-quote`)
                     ini_url = args[0]
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/wattpad?apikey=${lolKeyy}&url=${ini_url}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/wattpad?apikey=${lolKey}&url=${ini_url}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Rating : ${get_result.rating}\n`
@@ -3016,7 +3016,7 @@ zaki.sendMessage(from, buper, video, {
         
         if (args.length < 1) return reply('kasih teks lah^_^!!!')
         purba = body.slice(7)
-        anu = await fetchJson(`http://lolhuman.herokuapp.com/api/bahasapurba?apikey=${lolKeyy}&text=${purba}`, {
+        anu = await fetchJson(`http://lolhuman.herokuapp.com/api/bahasapurba?apikey=${lolKey}&text=${purba}`, {
           method: 'get'
         })
         reply(anu.result)
@@ -3097,7 +3097,7 @@ case 'shopee':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/shopee?apikey=${lolKeyy}&query=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/shopee?apikey=${lolKey}&query=${query}`)
                     get_result = get_result.result
                     ini_txt = 'Shopee Search : \n'
                     for (var x of get_result) {
@@ -3116,7 +3116,7 @@ case 'shopee':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/gsearch?apikey=${lolKeyy}&query=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/gsearch?apikey=${lolKey}&query=${query}`)
                     get_result = get_result.result
                     ini_txt = 'Google Search : \n'
                     for (var x of get_result) {
@@ -3133,10 +3133,10 @@ case 'shopee':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} Koceng Imot`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/stickerwa?apikey=${lolKeyy}&query=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/stickerwa?apikey=${lolKey}&query=${query}`)
                     get_result = get_result.result[0].stickers
                     for (var x of get_result) {
-                        ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/convert/towebp?apikey=${lolKeyy}&img=${x}`)
+                        ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/convert/towebp?apikey=${lolKey}&img=${x}`)
                         zaki.sendMessage(from, ini_buffer, sticker)
                     }
                     break                                                  
@@ -3333,7 +3333,7 @@ if (mek.message.extendedTextMessage != undefined || mek.message.extendedTextMess
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
 					teks = body.slice(7)
 					reply (mess.wait)
-					anu = await fetchJson(`https://api.zeks.xyz/api/nulis?text=${teks}&apikey=${apizekss}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/nulis?text=${teks}&apikey=${apizeks}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buff = await getBuffer(anu.result)
 					zaki.sendMessage(from, buff, image, {quoted: mek, caption: ind.success()})
@@ -3347,7 +3347,7 @@ if (mek.message.extendedTextMessage != undefined || mek.message.extendedTextMess
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 				reply(ind.wait)
-                    quotes = await fetchJson(`http://api.lolhuman.xyz/api/random/quotesnime?apikey=${lolKeyy}`)
+                    quotes = await fetchJson(`http://api.lolhuman.xyz/api/random/quotesnime?apikey=${lolKey}`)
                     quotes = quotes.result
                     quote = quotes.quote
                     char = quotes.character
@@ -3360,7 +3360,7 @@ if (mek.message.extendedTextMessage != undefined || mek.message.extendedTextMess
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 				reply(ind.wait)
-                    quotedilan = await fetchJson(`http://api.lolhuman.xyz/api/quotes/dilan?apikey=${lolKeyy}`)
+                    quotedilan = await fetchJson(`http://api.lolhuman.xyz/api/quotes/dilan?apikey=${lolKey}`)
                     reply(quotedilan.result)
                     break                                                  
 
@@ -3398,7 +3398,7 @@ if (mek.message.extendedTextMessage != undefined || mek.message.extendedTextMess
 				case 'animecry':
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry&apikey=${apitobzz}`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry&apikey=${apitobz}`, {method: 'get'})
                                         if (!isRegister) return reply(mess.only.daftarB)
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
@@ -3633,7 +3633,7 @@ case 'addprem':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
 					gatauda = body.slice(8)					
-					anu = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=${apizekss}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=${apizeks}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					zaki.sendMessage(from, buffer, image,{quoted: {"key":{"remoteJid":"grup@broadcast","fromMe":false,"id":"FBCE17736329A9CC8E3145BBB7465EB0"},"message":{"extendedTextMessage":{"text":"*STIKER NIH*","previewType":"NONE","contextInfo":{"stanzaId":"834BA0857AD7632F2198291B6EC1E5FF","participant":"0@s.whatsapp.net","quotedMessage":{"stickerMessage":{"url":"https://mmg.whatsapp.net/d/f/ArhEBIE1yQEYW4zNTFJ4JI6CRhJshL1OpPu3iPcP29dv.enc","fileSha256":"yi6tqxZ2L3FVYowW0hZtHKkdQdKo160nTeSTKmlc3bE=","fileEncSha256":"xiJHSKy7cv7WU5GYnxy9uxcVQg9YuThHym+qk6ohqt8=","mediaKey":"j+kzdjkwHcmhK/IiEzTJZQk4V+2hSzwHwYKCAbXHZgw=","mimetype":"image/webp","height":64,"width":64,"directPath":"/v/t62.15575-24/31575419_439698240636255_2474534567126333610_n.enc?oh=193bd6a34b685209e5d965c86cf85786&oe=606DD417","fileLength":"13256","mediaKeyTimestamp":"1615170980","jpegThumbnail": fs.readFileSync('./temp/image/tahta.jpeg')
 					} 
@@ -3683,7 +3683,7 @@ case 'addprem':
 			 	if (isLimit(sender)) return reply(ind.limitend(pusname))
 				
 				reply(ind.wait)
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/asupan?apikey=${lolKeyy}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/asupan?apikey=${lolKey}`)
                     ini_buffer = await getBuffer(get_result.result)
                     zaki.sendMessage(from, ini_buffer, video, { quoted: mek, mimetype: Mimetype.mp4, filename: "asupan.mp4" })
                     break                                                  
@@ -3695,7 +3695,7 @@ case 'deteksiwajah':
 	              	reply(mess.wait)
 		            owgi = await zaki.downloadAndSaveMediaMessage(ted)
 		            anu = await imgbb("2f4cd984b209e2f928f9dde2a8ead311", owgi)
-	             	hehe = await getBuffer(`http://lolhuman.herokuapp.com/api/facedetect?apikey=${lolKeyy}&img=${anu.display_url}`)
+	             	hehe = await getBuffer(`http://lolhuman.herokuapp.com/api/facedetect?apikey=${lolKey}&img=${anu.display_url}`)
                   	zaki.sendMessage(from, hehe, image, {quoted:mek})
 		            } else {
 		            reply(`KIRIM FOTO DENGAN CAPTION ${command}`)
@@ -3709,7 +3709,7 @@ case 'deteksiwajah':
 	                reply(mess.wait)
 	                owgi = await zaki.downloadAndSaveMediaMessage(ted)
 	                anu = await imgbb("2f4cd984b209e2f928f9dde2a8ead311", owgi)
-	                hehe = await getBuffer(`http://api.lolhuman.xyz/api/removebg?apikey=${lolKeyy}&img=${anu.display_url}`)
+	                hehe = await getBuffer(`http://api.lolhuman.xyz/api/removebg?apikey=${lolKey}&img=${anu.display_url}`)
 	                zaki.sendMessage(from, hehe, image, {quoted:mek})
                 	} else {
 	                reply(`KIRIM FOTO DENGAN CAPTION ${command}`)
@@ -3723,7 +3723,7 @@ case 'deteksiwajah':
 	                reply(mess.wait)
 	                owgi = await zaki.downloadAndSaveMediaMessage(ted)
 	                anu = await imgbb("2f4cd984b209e2f928f9dde2a8ead311", owgi)
-                  	hehe = await fetchJson(`http://lolhuman.herokuapp.com/api/agedetect?apikey=${lolKeyy}&img=${anu.display_url}`)
+                  	hehe = await fetchJson(`http://lolhuman.herokuapp.com/api/agedetect?apikey=${lolKey}&img=${anu.display_url}`)
                   	gender = `[ DETEKSI UMUR ] \nMenurut bot.. seseorang di gambar tersebut berumur = *${hehe.result}*`
 	                zaki.sendMessage(from, gender, text, {quoted:mek})
                  	} else {
@@ -3810,7 +3810,7 @@ case 'deteksiwajah':
                     if (isLimit(sender)) return reply(ind.limitend(pushname))
                     teks1 = gh.split("|")[0];
                     teks2 = gh.split("|")[1];
-                    data = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${teks1}&text2=${teks2}&apikey=${apitobzz}`, {method: 'get'})
+                    data = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${teks1}&text2=${teks2}&apikey=${apitobz}`, {method: 'get'})
                     hasil = await getBuffer(data.result)
                     zaki.sendMessage(from, hasil, image, {quoted: mek, caption: 'neh...'})
                     await limitAdd(sender)
@@ -3822,7 +3822,7 @@ case 'deteksiwajah':
         if (args.length < 1) return reply('Teks nya mana?')
         gatauda = body.slice(6)
         reply(ind.wait)
-        buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=${lolKeyy}&name=${gatauda}`, {
+        buffer = await getBuffer(`http://lolhuman.herokuapp.com/api/toloserti?apikey=${lolKey}&name=${gatauda}`, {
           method: 'get'
         })
         zaki.sendMessage(from, buffer, image, {
@@ -3861,7 +3861,7 @@ case 'deteksiwajah':
         if (args.length == 0) return reply('Teksnya Mana Kak?')
         reply(ind.wait)
         txt = args.join(" ")
-        buffer = await getBuffer(`http://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${lolKeyy}&text=${txt}`)
+        buffer = await getBuffer(`http://api.lolhuman.xyz/api/photooxy1/${command}?apikey=${lolKey}&text=${txt}`)
         zaki.sendMessage(from, buffer, image, {
           caption: 'Nih kak....\n\n*Follow!!* : @ahmadzaki_yo\n\nJangan Pake Nya Doang!!',
           quoted: mek
@@ -3902,7 +3902,7 @@ case 'deteksiwajah':
         if (args.length == 0) return reply('Teksnya Mana Kak')
         reply(ind.wait)
         txt = args.join(" ")
-        buffer = await getBuffer(`http://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolKeyy}&text=${txt}`)
+        buffer = await getBuffer(`http://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolKey}&text=${txt}`)
         zaki.sendMessage(from, buffer, image, {
           caption: 'Nih kak....\n\n*Follow!!* : @ahmadzaki_yo\n\nJangan Pake Nya Doang!!',
           quoted: mek
@@ -3946,7 +3946,7 @@ case 'deteksiwajah':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} Hans`)
         txt = args.join(" ")
-        buffer = await getBuffer(`http://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolKeyy}&text=${txt}`)
+        buffer = await getBuffer(`http://api.lolhuman.xyz/api/textprome/${command}?apikey=${lolKey}&text=${txt}`)
         zaki.sendMessage(from, buffer, image, {
           caption: 'Nih kak....\n\n*Follow!!* : @ahmadzaki_yo\n\nJangan Pake Nya Doang!!',
           quoted: mek
@@ -3959,7 +3959,7 @@ case 'deteksiwajah':
         
         if (args.length < 1) return reply('Judul lagunya mana kak')
         tels = body.slice(7)
-        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${tels}&apikey=${apitobzz}`, {
+        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${tels}&apikey=${apitobz}`, {
           method: 'get'
         })
         reply(anu.result)
@@ -4040,7 +4040,7 @@ if (!isRegister) return reply(mess.only.daftarB)
         if (args.length < 1) return reply('Contoh : ${prefix + command} https://drive.google.com/uc?id=1lBYJ0I-qJH9IsbCid-AsZosepX4-UJet&export=download') 
         reply(ind.wait)
 url = body.slice(10) 
-hans = await fetchJson(`https://api.zeks.xyz/api/gdbypass?apikey=${apizekss}&url=${url}`) 
+hans = await fetchJson(`https://api.zeks.xyz/api/gdbypass?apikey=${apizeks}&url=${url}`) 
 teks = `Filename : ${hans.data.file_name} \n\nSupport *HLX BOT* Dengan Follow ;\nInstagram.com/ahmadzaki_yo`
 buper = await getBuffer(hans.result.direct_download) 
 zaki.sendMessage(from, buper, video, {
@@ -4080,7 +4080,7 @@ if (!isRegister) return reply(ind.noregis())
         if (args.length < 1) return reply(`Contoh : ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
         reply(ind.wait)
 url = body.slice(6) 
-hans = await fetchJson(`https://api.lolhuman.xyz/api/facebook2?apikey=${lolKeyy}&url=${url}`)
+hans = await fetchJson(`https://api.lolhuman.xyz/api/facebook2?apikey=${lolKey}&url=${url}`)
 teks = `Support *HLX BOT* Dengan Follow :\nInstagram.com/ahmadzaki_yo`
 buper = await getBuffer(hans.result) 
 zaki.sendMessage(from, buper, video, {
@@ -4099,7 +4099,7 @@ if (!isRegister) return reply(mess.only.daftarB)
         reply(ind.wait)
         if (args.length < 1) return reply('Contoh : #igdl https://www.instagram.com/p/CIk47s2FMl4/') 
 url = body.slice(6) 
-hans = await fetchJson(`https://api.zeks.xyz/api/ig?apikey=${apizekss}&url=${url}`) 
+hans = await fetchJson(`https://api.zeks.xyz/api/ig?apikey=${apizeks}&url=${url}`) 
 teks = `Caption : ${hans.result.caption} \n\nSupport *HLX BOT* Dengan Follow :\nInstagram.com/ahmadzaki_yo`
 buffer = await getBuffer(hans.result.url) 
 zaki.sendMessage(from, buffer, video, {
@@ -4120,7 +4120,7 @@ if (!isRegister) return reply(mess.only.daftarB)
         if (args.length < 1) return reply(`Contoh : ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
         reply(ind.wait)
 url = body.slice(8) 
-hans = await fetchJson(`https://api.lolhuman.xyz/api/tiktok3?apikey=${lolKeyy}&url=${url}`) 
+hans = await fetchJson(`https://api.lolhuman.xyz/api/tiktok3?apikey=${lolKey}&url=${url}`) 
 teks = `Support *HLX BOT* Dengan Follow :\nInstagram.com/ahmadzaki_yo`
 buper = await getBuffer(hans.result) 
 zaki.sendMessage(from, buper, video, {
@@ -4140,7 +4140,7 @@ if (!isRegister) return reply(mess.only.daftarB)
         if (args.length < 1) return reply(`Contoh : ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
         reply(ind.wait)
 url = body.slice(13) 
-hans = await fetchJson(`https://api.lolhuman.xyz/api/tiktok3?apikey=${lolKeyy}&url=${url}`) 
+hans = await fetchJson(`https://api.lolhuman.xyz/api/tiktok3?apikey=${lolKey}&url=${url}`) 
 teks = `Support *HLX BOT* Dengan Follow :\nInstagram.com/ahmadzaki_yo`
 buper = await getBuffer(hans.result) 
 zaki.sendMessage(from, buper, audio, {
@@ -4280,7 +4280,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
   owgi = await zaki.downloadAndSaveMediaMessage(ted)
   tels = body.slice(7)
   anu = await imgbb("2f4cd984b209e2f928f9dde2a8ead311", owgi)
-  hehe = await getBuffer(`https://api.lolhuman.xyz/api/editor/pencil?apikey=${lolKeyy}&img=${anu.display_url}`)
+  hehe = await getBuffer(`https://api.lolhuman.xyz/api/editor/pencil?apikey=${lolKey}&img=${anu.display_url}`)
  zaki.sendMessage(from, hehe, image, {quoted:mek})
 } else {
   reply('Jangan tambah kan apapun pada command')
@@ -4314,7 +4314,7 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
   owgi = await zaki.downloadAndSaveMediaMessage(ted)
   tels = body.slice(7)
   anu = await imgbb("2f4cd984b209e2f928f9dde2a8ead311", owgi)
-  hehe = await getBuffer(`https://api.xteam.xyz/videomaker/shaunthesheep?url=${anu.display_url}&APIKEY=${apixteamm}`)
+  hehe = await getBuffer(`https://api.xteam.xyz/videomaker/shaunthesheep?url=${anu.display_url}&APIKEY=${apixteam}`)
  zaki.sendMessage(from, hehe, video, {quoted:mek})
 } else {
   reply('Jangan tambah kan apapun pada command')
@@ -5160,7 +5160,7 @@ case 'volume':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://open.spotify.com/track/0ZEYRVISCaqz5yamWZWzaA`)
                     url = args[0]
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/spotify?apikey=${lolKeyy}&url=${url}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/spotify?apikey=${lolKey}&url=${url}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Artists : ${get_result.artists}\n`
@@ -5179,7 +5179,7 @@ case 'volume':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/spotifysearch?apikey=${lolKeyy}&query=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/spotifysearch?apikey=${lolKey}&query=${query}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -5379,7 +5379,7 @@ case 'tebakgambar':
                     if (!isRegister) return reply(mess.only.daftarB)	
                     F = body.slice(6)
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} batu`)
-                    anu = await fetchJson(`https://api.xteam.xyz/game/suit?q=${F}&APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/game/suit?q=${F}&APIKEY=${apixteam}`)
                     anu1 = `➻ *KAMU* : ${anu.jawabanmu}\n`
                     anu1 += `➻ *BOT* : ${anu.jawabanbot}\n`
                     anu1 += `➻ *HASIL* : ${anu.hasil}\n`
@@ -5390,7 +5390,7 @@ case 'tebakgambar':
                     if (!isRegister) return reply(mess.only.daftarB)	
                     F = body.slice(12)
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} 9`)
-                    anu = await fetchJson(`https://api.xteam.xyz/game/tebakangka?q=${F}&APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/game/tebakangka?q=${F}&APIKEY=${apixteam}`)
                     anu1 = `➻ *KAMU* : ${anu.jawabanmu}\n`
                     anu1 += `➻ *BOT* : ${anu.jawabanbot}\n`
                     anu1 += `➻ *HASIL* : ${anu.hasil}\n`
@@ -5399,7 +5399,7 @@ case 'tebakgambar':
                     break                                                  
                     case 'tebakbendera':  
                     if (!isRegister) return reply(mess.only.daftarB)	
-                    anu = await fetchJson(`https://api.xteam.xyz/game/tebakbendera?APIKEY=${apixteamm}`)
+                    anu = await fetchJson(`https://api.xteam.xyz/game/tebakbendera?APIKEY=${apixteam}`)
                     anu1 = `➻ *SOAL* : INI BENDERA APA?? ${anu.bendera} TEBAK!! WAKTU 60 DETIK`
                     anu2 = `➻ *JAWABAN* : ${anu.jawaban} SELAMAT YG TELAH MENJAWAB BENAR`
                     setTimeout( () => {
@@ -5522,7 +5522,7 @@ case 'tebakgambar':
                         file_name = getRandom(".webp")
                         ini_txt = args.join(" ").split("|")
                         request({
-                            url: `http://api.lolhuman.xyz/api/convert/towebpauthor?apikey=${lolKeyy}`,
+                            url: `http://api.lolhuman.xyz/api/convert/towebpauthor?apikey=${lolKey}`,
                             method: 'POST',
                             formData: {
                                 "img": fs.createReadStream(filePath),
@@ -5754,7 +5754,7 @@ case 'jelekcek':
 						if (!isNsfw) return reply('*NSFW MATI*')
                                                 if (!isRegister) return reply(mess.only.daftarB)
                                                 if (isLimit(sender)) return reply(ind.limitend(pushname))
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${apitobzz}`, {method: 'get'})
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${apitobz}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						zaki.sendMessage(from, buffer, image, {quoted: mek, caption: 'mesum'})
                                                 await limitAdd(sender)
@@ -5811,7 +5811,7 @@ case 'jelekcek':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
 					reply (mess.wait)
-					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${gbl1}&text2=${gbl2}&apikey=${apizekss}`, {method: 'get'}) 
+					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${gbl1}&text2=${gbl2}&apikey=${apizeks}`, {method: 'get'}) 
 
 					zaki.sendMessage(from, buffer, image, {quoted: mek})
                                         await limitAdd(sender)
@@ -5885,7 +5885,7 @@ case 'jelekcek':
                                                 if (!isNsfw) return reply('*NSFW MATI*')
                                                 if (!isRegister) return reply(mess.only.daftarB)
                                                 if (isLimit(sender)) return reply(ind.limitend(pushname))
-                                                res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=${apitobzz}`, {method: 'get'})
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=${apitobz}`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 zaki.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih gambarnya kak...'})
                                                 await limitAdd(sender)
@@ -5933,7 +5933,7 @@ case 'runtime':
                    break                                                  
   case 'asmaulhusna':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/Asmaulhusna?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/Asmaulhusna?APIKEY=${apixteam}`)
 					anu1 = `➻ *INDEX* : ${anu.result.index}\n`
 					anu1 += `➻ *LATIN* : ${anu.result.latin}\n`
 					anu1 += `➻ *ARAB* : ${anu.result.arabic}\n`
@@ -5943,7 +5943,7 @@ case 'runtime':
 					break                                                  
 					case 'ayatkursi':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/ayatkursi?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/ayatkursi?APIKEY=${apixteam}`)
 					anu1 = `➻ *TAFSIR* : ${anu.result.data.tafsir}\n`
 					anu1 += `➻ *TRANSLATION* : ${anu.result.data.translation}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.data.arabic}\n`
@@ -5952,7 +5952,7 @@ case 'runtime':
 					break                                                  
 					case 'bacaansholat':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/bacaansholat?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/bacaansholat?APIKEY=${apixteam}`)
 					anu1 = `➻ *ID* : ${anu.result.id}\n`
 					anu1 += `➻ *NAME* : ${anu.result.name}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.arabic}\n`
@@ -5962,7 +5962,7 @@ case 'runtime':
 					break                                                  
 					case 'doaharian':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/doaharian?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/doaharian?APIKEY=${apixteam}`)
 					anu1 = `➻ *TITLE* : ${anu.result.title}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.arabic}\n`
 					anu1 += `➻ *LATIN* : ${anu.result.latin}\n`
@@ -5971,7 +5971,7 @@ case 'runtime':
 					break                                                  
 					case 'kisahnabi':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/kisahnabi?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/kisahnabi?APIKEY=${apixteam}`)
 					anu1 = `➻ *NAME* : ${anu.result.name}\n`
 					anu1 += `➻ *KELAHIRAN* : ${anu.result.thn_kelahiran}\n`
 					anu1 += `➻ *USIA* : ${anu.result.usia}\n`
@@ -5981,7 +5981,7 @@ case 'runtime':
 					break                                                  
 					case 'niatsholat':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/niatsholat?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/niatsholat?APIKEY=${apixteam}`)
 					anu1 = `➻ *ID* : ${anu.result.id}\n`
 					anu1 += `➻ *NAME* : ${anu.result.name}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.arabic}\n`
@@ -5991,7 +5991,7 @@ case 'runtime':
 					break                                                  
 					case 'tahlil':
 					if (!isRegister) return reply(mess.only.daftarB)	
-					anu = await fetchJson(`https://xteam.xyz/religi/tahlil?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/tahlil?APIKEY=${apixteam}`)
 					anu1 = `➻ *ID* : ${anu.result.id}\n`
 					anu1 += `➻ *NAME* : ${anu.result.title}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.arabic}\n` 
@@ -6000,7 +6000,7 @@ case 'runtime':
 					break                                                  
 					case 'wirid':
 					if (!isRegister) return reply(mess.only.daftarB)	 
-					anu = await fetchJson(`https://xteam.xyz/religi/wirid?APIKEY=${apixteamm}`)
+					anu = await fetchJson(`https://xteam.xyz/religi/wirid?APIKEY=${apixteam}`)
 					anu1 = `➻ *ID* : ${anu.result.id}\n`
 					anu1 += `➻ *TIMES* : ${anu.result.times}\n`
 					anu1 += `➻ *ARABIC* : ${anu.result.arabic}\n` 
@@ -6062,7 +6062,7 @@ case 'runtime':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
                                         reply (mess.wait)
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomkpop?apikey=${apitobzz}`, {method: 'get'})
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomkpop?apikey=${apitobz}`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         zaki.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih kpopnya kak...'})
                                         await limitAdd(sender)
@@ -6071,7 +6071,7 @@ case 'runtime':
                                         getauda = body.slice(6)
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
-                                        data = await fetchJson(`https://tobz-api.herokuapp.com/randomfmylife?apikey=${apitobzz}`, {method: 'get'})
+                                        data = await fetchJson(`https://tobz-api.herokuapp.com/randomfmylife?apikey=${apitobz}`, {method: 'get'})
                                         hasil = `*Fuck My Life*\n${data.result}`
                                         reply(hasil)
                                         await limitAdd(sender)
@@ -6086,7 +6086,7 @@ case 'runtime':
 		if (!isRegister) return reply(mess.only.daftarB)
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/${command}?apikey=${lolKeyy}&text=${ini_txt}`)
+                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/${command}?apikey=${lolKey}&text=${ini_txt}`)
                     zaki.sendMessage(from, ini_buffer, sticker, { quoted: mek})
                     break                                                  
                     case 'attp':
@@ -6283,7 +6283,7 @@ case 'snobg':
           file_name = getRandom('.png')
           file_name2 = getRandom('.webp')
           req({
-            url: `https://api.lolhuman.xyz/api/removebg?apikey=${lolKeyy}`,
+            url: `https://api.lolhuman.xyz/api/removebg?apikey=${lolKey}`,
             method: 'POST',
             formData: {
               "img": fs.createReadStream(filePath)
@@ -6516,7 +6516,7 @@ break
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (args.length < 1) return reply(`game yang mau di cari apa kak? \nContoh : ${prefix}happymod pubg`)
                                         if (isLimit(sender)) return reply(ind.limitend(pushname))
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${toby}&apikey=${apitobzz}`, {method: 'get'})
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${toby}&apikey=${apitobz}`, {method: 'get'})
                                         hepi = anu.result[0]
                                         buffer = await getBuffer(hepi.image)
                                         teks = `〘 *HAPPY MOD* 〙\n  ║\n  ╠➥ Title : ${hepi.title} \n  ╠➥ Size : ${hepi.size} \n  ╠➥ Version : ${hepi.version} \n  ╠➥ Root : ${hepi.root} \n ╠➥  Purchase : ${hepi.purchase} \n ╠➥ Price : ${hepi.price} \n  ╠➥ Link : ${hepi.link} \n  ╠➥  Download : ${hepi.download}\n╚═══════`
@@ -6664,7 +6664,7 @@ case 'infonomer':
 				               if (!isRegister) return reply(mess.only.daftarB)
                                if (isBanned) return reply(mess.only.benned)  
                                if (isLimit(sender)) return reply(ind.limitend(pushname))
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${apitobzz}`)
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${apitobz}`)
 			hepi = data.result[0] 
 			teks = `*Nama*: ${data.result[0].title}\n*publisher*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*size*: ${hepi.size}\n*latest version*: ${hepi.latest_version}\n*genre*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
 			buffer = await getBuffer(hepi.image)
@@ -6690,7 +6690,7 @@ case 'infonomer':
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
 					reply (mess.wait)
-					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${teks}&apikey=${apizekss}`)
+					buffer = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${teks}&apikey=${apizeks}`)
 					zaki.sendMessage(from, buffer, image, {quoted:  { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { mimetype: "image/jpeg", "caption": ` *Harta Tahta ${teks}*`, "jpegThumbnail": fs.readFileSync('./temp/image/tahta.jpeg') } } } } )
 					break    
 					
@@ -6700,7 +6700,7 @@ case 'infonomer':
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
 					reply (mess.wait)
-					buffer = await getBuffer(`https://api.lolhuman.xyz/api/creator/kannagen?apikey=${lolKeyy}&text=${teks}`)
+					buffer = await getBuffer(`https://api.lolhuman.xyz/api/creator/kannagen?apikey=${lolKey}&text=${teks}`)
 					zaki.sendMessage(from, buffer, image, {quoted: mek} )
 					break
 					
@@ -6714,14 +6714,14 @@ case 'spamsms':
 				reply(ind.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} 08303030303030`)
                     nomor = args[0]
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam1?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam2?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam3?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam4?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam5?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam6?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam7?apikey=${lolKeyy}&nomor=${nomor}`)
-                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam8?apikey=${lolKeyy}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam1?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam2?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam3?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam4?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam5?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam6?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam7?apikey=${lolKey}&nomor=${nomor}`)
+                    await fetchJson(`http://api.lolhuman.xyz/api/sms/spam8?apikey=${lolKey}&nomor=${nomor}`)
                     reply("Success")
                     break                                                  
 		case 'spamcall':
@@ -6759,7 +6759,7 @@ case 'imgmaker':
         if (args.length < 1) return reply('Url png/jpg mana kak')
         ainez = body.slice(10)
         reply(ind.wait())
-        anu = await fetchJson(`http://lolhuman.herokuapp.com/api/quotemaker?apikey=${lolKeyy}&text=${ainez}`, {
+        anu = await fetchJson(`http://lolhuman.herokuapp.com/api/quotemaker?apikey=${lolKey}&text=${ainez}`, {
           method: 'get'
         })
         buffer = await getBuffer(anu.result)
@@ -6778,7 +6778,7 @@ case 'galaxtext':
         if (args.length < 1) return reply(ind.wrongf())
         ct = body.slice(10)
         reply(ind.wait())
-        ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/galaxywallpaper?apikey=${lolKeyy}&text=${ct}`)
+        ct = await getBuffer(`http://lolhuman.herokuapp.com/api/ephoto1/galaxywallpaper?apikey=${lolKey}&text=${ct}`)
         zaki.sendMessage(from, ct, image, {
           caption: 'Nih kak udah jadi..',
           quoted: mek
@@ -6808,7 +6808,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(7)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=${apizekss}&text=${F}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=${apizeks}&text=${F}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                                      
                    case 'wall':  
@@ -6816,7 +6816,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(6)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/break                                                  wall?apikey=${apizekss}&text=${F}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/break                                                  wall?apikey=${apizeks}&text=${F}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                     
                    case 'wolf':  
@@ -6824,7 +6824,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(6)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=${apizekss}&text1=rimurubotz&text2=${F}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=${apizeks}&text1=rimurubotz&text2=${F}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                   
                    case 'tfire':  
@@ -6832,7 +6832,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(7)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/tfire?text=${F}&apikey=${apizekss}`)                   
+                   anu = await getBuffer(`https://api.zeks.xyz/api/tfire?text=${F}&apikey=${apizeks}`)                   
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                                  
                    case 'ytgold':  
@@ -6841,7 +6841,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(8)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/gplaybutton?text=${F}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/gplaybutton?text=${F}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'ytsilver':  
@@ -6850,7 +6850,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(10)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/splaybutton?text=${F}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/splaybutton?text=${F}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 't3d':  
@@ -6858,7 +6858,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(5)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/text3dbox?apikey=${apizekss}&text=${F}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/text3dbox?apikey=${apizeks}&text=${F}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'logoa':  
@@ -6868,7 +6868,7 @@ case 'neon2':
 				   var F1 = F.split("&")[0];
 				   var F2 = F.split("&")[1]; 
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'pornhub':  
@@ -6878,7 +6878,7 @@ case 'neon2':
 				   var F1 = F.split("&")[0];
 				   var F2 = F.split("&")[1]; 
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${F1}&text2=${F2}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${F1}&text2=${F2}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'marvel':  
@@ -6888,7 +6888,7 @@ case 'neon2':
 				   var F1 = F.split("&")[0];
 				   var F2 = F.split("&")[1]; 
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'leavest':  
@@ -6896,7 +6896,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(9)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/leavest?text=${F}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/leavest?text=${F}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                                      
                    case 'phcoment':  
@@ -6907,7 +6907,7 @@ case 'neon2':
 				   var F1 = F.split("&")[0];
 				   var F2 = F.split("&")[1]; 
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/phub?apikey=${apizekss}&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara%2Bbuat%2Bfoto%2Bprofil%2Bdi%2Bwhatsapp%2Bmenjadi%2Bunik.jpg&username=${F1}&msg=${F2}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/phub?apikey=${apizeks}&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara%2Bbuat%2Bfoto%2Bprofil%2Bdi%2Bwhatsapp%2Bmenjadi%2Bunik.jpg&username=${F1}&msg=${F2}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'nulis':  
@@ -6915,7 +6915,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} zaki*`)
                    F = body.slice(7)
                    reply (mess.wait)
-                   anu = await getBuffer(`https://api.zeks.xyz/api/nulis?text=${F}&apikey=${apizekss}`)
+                   anu = await getBuffer(`https://api.zeks.xyz/api/nulis?text=${F}&apikey=${apizeks}`)
                    zaki.sendMessage(from, anu, image, {caption: `nihh kack`, quoted: mek})
                    break                                                  
                    case 'shortener':  
@@ -6923,7 +6923,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command}https://link*`)
                    F = body.slice(11)
                    reply (mess.wait)                   
-                   anu = await fetchJson(`https://api.zeks.xyz/api/sid-shortener?apikey=${apizekss}&url=${F}`)
+                   anu = await fetchJson(`https://api.zeks.xyz/api/sid-shortener?apikey=${apizeks}&url=${F}`)
                    anu1 = `➻ *SHORT* : ${anu.short}\n`
                    anu1 += `➻ *LONG* : ${anu.long}\n`
                    anu1 += `➻ *DATE* : ${anu.created_at.date}\n`
@@ -6937,7 +6937,7 @@ case 'neon2':
                    if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command}https://link*`)
                    F = body.slice(10)
                    reply (mess.wait)                                      
-                   anu = await fetchJson(`https://api.zeks.xyz/api/urlshort-all?apikey=${apizekss}&url=${F}`)
+                   anu = await fetchJson(`https://api.zeks.xyz/api/urlshort-all?apikey=${apizeks}&url=${F}`)
                    anu1 = `➻ *SATU* : ${anu.result_1}\n`
                    anu1 += `➻ *DUA* : ${anu.result_2}\n`
                    anu1 += `➻ *TIGA* : ${anu.result_3}\n`
@@ -7051,7 +7051,7 @@ case 'neon2':
                     reply(mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
                     ini_url = args[0]
-                    ini_url = `http://api.lolhuman.xyz/api/tiktok?apikey=${lolKeyy}&url=${ini_url}`
+                    ini_url = `http://api.lolhuman.xyz/api/tiktok?apikey=${lolKey}&url=${ini_url}`
                     get_result = await fetchJson(ini_url)
                     ini_buffer = await getBuffer(get_result.result.link)
                     zaki.sendMessage(from, ini_buffer, video, { quoted: mek})
@@ -7062,7 +7062,7 @@ case 'neon2':
                     reply(mess.wait) 
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
                     ini_link = args[0]
-                    get_audio = await getBuffer(`http://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolKeyy}&url=${ini_link}`)
+                    get_audio = await getBuffer(`http://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolKey}&url=${ini_link}`)
                     zaki.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: mek})
                     break                                                  
                     case 'telesticker':  
@@ -7070,7 +7070,7 @@ case 'neon2':
 		            if (!isPrem) return reply(mess.only.premium) 
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
                     ini_url = args[0]
-                    ini_url = await fetchJson(`http://api.lolhuman.xyz/api/telestick?apikey=${lolKeyy}&url=${ini_url}`)
+                    ini_url = await fetchJson(`http://api.lolhuman.xyz/api/telestick?apikey=${lolKey}&url=${ini_url}`)
                     ini_sticker = ini_url.result.sticker
                     for (sticker_ in ini_sticker) {
                     ini_buffer = await getBuffer(ini_sticker[sticker_])
@@ -7165,7 +7165,7 @@ case 'neon2':
 			 	    var F2 = F.split("&")[1]; 
 			 	    var F3 = F.split("&")[2]; 
                     reply (mess.wait)
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis?nama=${F1}&kelas=${F2}&text=${F3}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis?nama=${F1}&kelas=${F2}&text=${F3}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `nih kak`, quoted: mek})
                     break                                                  
                     case 'nulis2':  
@@ -7173,7 +7173,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis2?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis2?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                   
                     case 'nulis3':  
@@ -7181,7 +7181,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis3?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis3?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                   
                     case 'nulis4':  
@@ -7189,7 +7189,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                   
                     case 'nulis5':  
@@ -7197,7 +7197,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis5?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis5?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                   
                     case 'nulis6':  
@@ -7205,7 +7205,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/magernulis6?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/magernulis6?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, image, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                                       
                     case 'video1':  
@@ -7214,7 +7214,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/poly?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/poly?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
                     case 'video2':  
@@ -7223,7 +7223,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/bold?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/bold?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
                     case 'video3':  
@@ -7232,7 +7232,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/glowing?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/glowing?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
                     case 'video4':  
@@ -7241,7 +7241,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/colorful?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/colorful?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
                     case 'video5':  
@@ -7250,7 +7250,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/army?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/army?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
                     case 'video6':  
@@ -7259,7 +7259,7 @@ case 'neon2':
                     if (args.length < 1) return reply(`[❗] CONTOH??\n*${prefix}${command} bot whatsapp*`)
                     reply (mess.wait) 
                     F = body.slice(8)              			    
-                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/retro?text=${F}&APIKEY=${apixteamm}`)
+                    anu = await getBuffer(`https://api.xteam.xyz/videomaker/retro?text=${F}&APIKEY=${apixteam}`)
                     zaki.sendMessage(from, anu, video, {caption: `Nihh kack`, quoted: mek}) 
                     break                                                  
 case 'chiisaihentai':
@@ -7286,7 +7286,7 @@ case 'chiisaihentai':
         if (!isNsfw) return reply('*NSFW MATI*')
         
         await limitAdd(sender)
-        await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${lolKeyy}`).then((gambar) => {
+        await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${lolKey}`).then((gambar) => {
           zaki.sendMessage(from, gambar, image, {
             quoted: mek,
             caption: 'Nih Senpai...\n*Support HLX Bot Dengan Follow & Subscribe :*\nInstagram.com/ahmadzaki_yo'
@@ -7340,7 +7340,7 @@ case 'chiisaihentai':
         if (!isNsfw) return reply('*NSFW MATI*')
         
         await limitAdd(sender)
-        getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=${lolKeyy}`).then((gambar) => {
+        getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=${lolKey}`).then((gambar) => {
           zaki.sendMessage(from, gambar, image, {
             quoted: mek,
             caption: 'Nih Senpai...\n*Support HLX Bot Dengan Follow & Subscribe :*\nInstagram.com/ahmadzaki_yo'
@@ -7355,7 +7355,7 @@ case 'chiisaihentai':
 			      	reply(ind.wait)
                     ranp = getRandom('.gif')
                     rano = getRandom('.webp')
-                    ini_buffer = `http://api.lolhuman.xyz/api/random2/${command}?apikey=${lolKeyy}`
+                    ini_buffer = `http://api.lolhuman.xyz/api/random2/${command}?apikey=${lolKey}`
                     exec(`wget ${ini_buffer} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
                         fs.unlinkSync(ranp)
                         buff = fs.readFileSync(rano)
@@ -7371,7 +7371,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
         query = args.join(" ")
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=${lolKeyy}&url=${query}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=${lolKey}&url=${query}`)
         get_result = get_result.result
         ini_txt = `Title : ${get_result.title}\n`
         ini_txt += `Duration : ${get_result.duration}\n`
@@ -7401,7 +7401,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
         query = args.join(" ")
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${lolKeyy}&query=${query}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${lolKey}&query=${query}`)
         get_result = get_result.result
         ini_txt = ""
         for (var x of get_result) {
@@ -7422,7 +7422,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} https://xhamster.com/videos/party-with-friends-end-in-awesome-fucking-5798407`)
         query = args.join(" ")
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamster?apikey=${lolKeyy}&url=${query}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamster?apikey=${lolKey}&url=${query}`)
         get_result = get_result.result
         ini_txt = `Title : ${get_result.title}\n`
         ini_txt += `Duration : ${get_result.duration}\n`
@@ -7452,7 +7452,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
         henid = args[0]
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=${lolKeyy}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=${lolKey}`)
         get_result = get_result.result
         ini_txt = `Title Romaji : ${get_result.title_romaji}\n`
         ini_txt += `Title Native : ${get_result.title_native}\n`
@@ -7477,7 +7477,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
         henid = args[0]
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${henid}?apikey=${lolKeyy}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${henid}?apikey=${lolKey}`)
         get_result = get_result.result
         ini_buffer = await getBuffer(get_result)
         await zaki.sendMessage(from, ini_buffer, document, {
@@ -7494,7 +7494,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/isekai-harem-monogatari-episode-4-subtitle-indonesia/`)
         ini_url = args[0]
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoi?apikey=${lolKeyy}&url=${ini_url}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoi?apikey=${lolKey}&url=${ini_url}`)
         get_result = get_result.result
         ini_txt = `Title : ${get_result.anime}\n`
         ini_txt += `Porducers : ${get_result.producers}\n`
@@ -7524,7 +7524,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} Isekai Harem`)
         query = args.join(" ")
-        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoisearch?apikey=${lolKeyy}&query=${query}`)
+        get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoisearch?apikey=${lolKey}&query=${query}`)
         get_result = get_result.result
         ini_txt = ""
         for (var x of get_result) {
@@ -7543,7 +7543,7 @@ case 'xnxx':
         reply(ind.wait)
         if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
         ini_cari = body.slice(12)
-        hans = await fetchJson(`https://api.lolhuman.xyz/api/pornhubsearch?apikey=${lolKeyy}&query=${ini_cari}`)
+        hans = await fetchJson(`https://api.lolhuman.xyz/api/pornhubsearch?apikey=${lolKey}&query=${ini_cari}`)
         teks = ' \n\n─────────────────────────\n\n'
         for (let i of hans.result) {
           teks += `*Title :* ${i.title}\n*Link :* ${i.link}\n*Image :* ${i.thumbnail}\n*Duration :* ${i.duration}\n*Uploder :* ${i.uploader}\n*Views :* ${i.views}\n*Rating :* ${i.rating}\n*Upload Time :* ${i.added} \n\n─────────────────────────\n\n`
