@@ -13,6 +13,6 @@
     "languages": "ind",
     "botPrefix": "#",
     "memberLimitss": "10",
-    "userDefaultLimit": "50"
+    "userDefaultLimit": "30"
 }
 
