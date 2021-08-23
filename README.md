@@ -107,17 +107,17 @@ Example:
 ```bash
 "ownerName": "Ahmadzaki",
 ```
-- Change ```lolKey``` with your mhankbarbar ApiKey
+- Change ```lolKey``` with your lolKey ApiKey
 Example:
 ```bash
 "lolKey": "YOUR_APIKEY",
 ```
-- Change ```zeksKey``` with your mhankbarbar ApiKey
+- Change ```zeksKey``` with your zeksKey ApiKey
 Example:
 ```bash
 "zeksKey": "YOUR_APIKEY",
 ```
-- Change ```xteamKey``` with your mhankbarbar ApiKey
+- Change ```xteamKey``` with your xteamKey ApiKey
 Example:
 ```bash
 "xteamKey": "YOUR_APIKEY",
