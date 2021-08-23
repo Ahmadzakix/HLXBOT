@@ -130,7 +130,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:Ahmadzaki\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6283873394995:+6283873394995\n' // WhatsApp ID + phone number
+            + `TEL;type=CELL;type=VOICE;waid=${nomorOwner}:+${nomorOwner}\n`// WhatsApp ID + phone number
             + 'END:VCARD'
 
 
@@ -480,8 +480,8 @@ const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.
                      virtex: `[⚠️] Cie Mau Ngerusuh Ya, Kasian Ga bisa 😂`,
                      
                      premium: `[💎] *Maaf Fitur Ini Khusus User Premium HLXBOT
-                    Kalau Ingin Membeli Premium Silahkan Hubungi wa.me/6283873394995*`,
-                                     daftarB:  ` *──「 BELUM REGISTER 」──* \nHalo Kak\nKamu belum Register nih, register dulu yuk... \n\nCommand : ${prefix}verify`,
+                    Kalau Ingin Membeli Premium Silahkan Hubungi wa.me/6283873394995* `,
+                                     daftarB:  ` *──「 BELUM REGISTER 」──* \nHalo Kak\nKamu belum Register nih, register dulu yuk... \n\nKetik : ${prefix}verify`,
                                 }
                         }
                 	const apakah = ['Ya','Tidak','Mungkin iya','Mungkin Tidak','Tentu iya','Tentu tidak']
