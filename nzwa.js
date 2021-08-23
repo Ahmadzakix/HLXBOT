@@ -109,7 +109,13 @@ const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 const {
     botName,
     ownerName,
-    BarBarKey,
+    lolhumanKey,
+    xteamKey,
+    xKey,
+    tobzKey,
+    zeksKey,
+    wmdepan,
+    wmbelakang,
     ownerNumbers,
     languages,
     memberLimitss,
@@ -143,7 +149,7 @@ ator = wmbelakang
 apixteam = xteamKey
 xapi = xKey
 apitobz = tobzKey
-lolKey = lolKey
+lolKey = lolhumanKey
 apizeks = zeksKey
 /*************FUNCTION****************/
         const getLevelingXp = (userId) => {
