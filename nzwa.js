@@ -117,6 +117,7 @@ const {
     wmdepan,
     wmbelakang,
     ownerNumbers,
+    nomorOwner,
     languages,
     memberLimitss,
     userDefaultLimit
