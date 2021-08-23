@@ -120,7 +120,7 @@ const {
     nomorOwner,
     languages,
     memberLimitss,
-    userDefaultLimit,
+    userDefaultLimit
 } = option
 
 /************Load Menu*****************/
